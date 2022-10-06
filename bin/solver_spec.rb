@@ -1,4 +1,4 @@
-require_relative './solver'
+require_relative '../solver'
 
 describe Solver do
   let(:solver) { Solver.new }
@@ -37,22 +37,22 @@ describe Solver do
       expect { solver.fizzbuzz('5') }.to raise_error(TypeError)
       expect { solver.fizzbuzz(false) }.to raise_error(TypeError)
     end
-    
+
     it "Should return 'fizz' if the integer is divisible by 3" do
       fizzbuzz_6 = solver.fizzbuzz(6)
       expect(fizzbuzz_6).to eq('fizz')
     end
-    
+
     it "Should return 'buzz' if the integer is divisible by 5" do
       fizzbuzz_10 = solver.fizzbuzz(10)
       expect(fizzbuzz_10).to eq('buzz')
     end
-        
+
     it "Should return 'fizzbuzz' if the integer is divisible by 3 and by 5" do
       fizzbuzz_15 = solver.fizzbuzz(15)
       expect(fizzbuzz_15).to eq('fizzbuzz')
     end
-        
+
     it 'Should return a String' do
       fizzbuzz_type = solver.fizzbuzz(7).is_a?(String)
       fizzbuzz_7 = solver.fizzbuzz(7)
