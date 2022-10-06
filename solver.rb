@@ -28,6 +28,6 @@ class Solver
   end
 end
 
-puts Solver.new.factorial(3)
+puts Solver.new.factorial(8)
 puts Solver.new.reverse('hello')
 puts Solver.new.fizzbuzz(15)
