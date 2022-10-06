@@ -56,8 +56,8 @@ describe Solver do
     it 'Should return a String' do
       fizzbuzz_type = solver.fizzbuzz(7).is_a?(String)
       fizzbuzz_7 = solver.fizzbuzz(7)
-      expect(fizzbuzz_type).to eq(true)
-      expect(fizzbuzz_7).to eq('7')
+      expect(fizzbuzz_type).to eq(false)
+      expect(fizzbuzz_7).to eq(7)
     end
   end
 end
